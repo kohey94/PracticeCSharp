@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Linq;
+using System.Numerics;
 
 namespace Practice001
 {
@@ -133,8 +134,6 @@ namespace Practice001
                     foreach (var i in Enumerable.Range(1, num * 2 - 1).Select(x => x <= num ? x : num * 2 - x))
                     {
                         foreach (var j in Enumerable.Range(1, i)) Console.Write("+");
-                        // 別の書き方
-                        // Enumerable.Range(1, i).ToList().ForEach(_ => { Console.Write("+"); });
                         Console.WriteLine();
                     }
 
@@ -146,8 +145,28 @@ namespace Practice001
                 }
             }
 
+            // 入力値の数を頂点とするピラミッド（縦）
+            Console.WriteLine("-----");
+            while (true)
+            {
+                var n = Console.ReadLine();
+                if (int.TryParse(n, out int num))
+                {
+                    var x = 0;
+                    while (++x <= num)
+                    {
+                        Enumerable.Range(1, num - x).ToList().ForEach(_ => { Console.Write(" "); });
+                        Enumerable.Range(1, x + x - 1).ToList().ForEach(_ => { Console.Write("+"); });
+                        Console.WriteLine();
+                    }
 
+                    break;
+                }
+                else
+                {
+                    Console.WriteLine("整数を入力してください。");
+                }
+            }
         }
-
     }
 }
