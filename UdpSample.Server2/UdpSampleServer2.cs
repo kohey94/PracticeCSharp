@@ -3,13 +3,13 @@ using System.Net;
 using System.Net.Sockets;
 using System.Text;
 
-namespace UdpSample.Server
+namespace UdpSample.Server2
 {
-    class UdpSampleServer
+    class UdpSampleServer2
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Udp Server.");
+            Console.WriteLine("Udp Server2.");
 
             var receiveIp = IPAddress.Parse("127.0.0.1");
             var remoteIp = IPAddress.Any;
