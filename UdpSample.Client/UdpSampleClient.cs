@@ -11,8 +11,8 @@ namespace UdpSample.Client
         {
             Console.WriteLine("Udp Client.");
 
-            var sendIp = IPAddress.Parse("255.255.255.255");
-            // var sendIp = IPAddress.Broadcast ;
+            // var sendIp = IPAddress.Parse("255.255.255.255");
+            var sendIp = IPAddress.Broadcast ;
             var sendPort = 12345;
 
             using var udpClient = new UdpClient();
