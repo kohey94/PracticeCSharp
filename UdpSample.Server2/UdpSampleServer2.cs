@@ -29,8 +29,8 @@ namespace UdpSample.Server2
                 var receiveMsg = Encoding.UTF8.GetString(receiveBytes);
 
                 Console.WriteLine($"receiveData   : {receiveMsg}");
-                Console.WriteLine($"remoteAddress : {remoteEp.Address}");
-                Console.WriteLine($"remotePort    : {remoteEp.Port}");
+                //Console.WriteLine($"remoteAddress : {remoteEp.Address}");
+                //Console.WriteLine($"remotePort    : {remoteEp.Port}");
 
                 if (receiveMsg == "exit") break;
             }

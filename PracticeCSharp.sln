@@ -13,9 +13,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UdpSample.Client", "UdpSamp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UdpSample.Server2", "UdpSample.Server2\UdpSample.Server2.csproj", "{87DB398A-A99D-47BF-A7E0-BD8ACC1A13B8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UdpEasyChat.Server", "UdpEasyChat.Server\UdpEasyChat.Server.csproj", "{D46B7AC0-1A7C-4E8C-A104-A8BC7262800E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UdpEasyChat.Server", "UdpEasyChat.Server\UdpEasyChat.Server.csproj", "{D46B7AC0-1A7C-4E8C-A104-A8BC7262800E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UdpEasyChat.Client", "UdpEasyChat.Client\UdpEasyChat.Client.csproj", "{7CFFD6E3-B4F4-4FDF-866E-CC06E0CB4A95}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UdpEasyChat.Client", "UdpEasyChat.Client\UdpEasyChat.Client.csproj", "{7CFFD6E3-B4F4-4FDF-866E-CC06E0CB4A95}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
