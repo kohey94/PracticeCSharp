@@ -11,13 +11,13 @@ namespace ConsoleApp.Tui
         {
             Application.Init();
             var top = Application.Top;
-
+            
             var win = new Window("MyApp")
             {
                 X = 0,
                 Y = 1,
                 Width = Dim.Fill(),
-                Height = Dim.Fill()
+                Height = Dim.Fill(),
             };
             top.Add(win);
 
@@ -55,14 +55,38 @@ namespace ConsoleApp.Tui
                 Width = Dim.Width(loginText)
             };
 
-            win.Add(
-                login, password, loginText, passText,
+            var rect = new Rect()
+            {
+                X = 3,
+                Y = 6,
+                Width = 113,
+                Height = 17
+            };
+            var display = new TextView(rect);
+            display.ColorScheme = Colors.Menu;
 
-                new CheckBox(3, 6, "Remember me"),
-                new RadioGroup(3, 8, new[] { "_Personal", "_Company" }),
-                new Button(3, 14, "Ok"),
-                new Button(10, 14, "Cancel"),
-                new Label(3, 18, "Press F9 or ESC plus 9 to activate the menubar"));
+            var inputTextField = new TextField("")
+            {
+                X = 3,
+                Y = Pos.Bottom(display) + 1,
+                Width = 105
+            };
+            var sendButton = new Button("送信")
+            {
+                X = Pos.Right(inputTextField),
+                Y = Pos.Top(inputTextField),
+                Width = 6
+            };
+
+            win.Add(
+                login, 
+                password, 
+                loginText,
+                passText, 
+                display,
+                inputTextField,
+                sendButton
+                );
 
 
             Application.Run();
