@@ -24,8 +24,8 @@ namespace ConsoleApp.Tui
             var menu = new MenuBar(new MenuBarItem[] {
                 new MenuBarItem ("_File", new MenuItem [] {
                     new MenuItem ("_New", "Creates new file", NewFile),
-                    new MenuItem ("_Close", "", () => Close()),
-                    new MenuItem ("_Quit", "", () => { if (Quit()) top.Running = false; })
+                    new MenuItem ("_Close", "", () => Close ()),
+                    new MenuItem ("_Quit", "", () => { if (Quit ()) top.Running = false; })
                 }),
                 new MenuBarItem ("_Edit", new MenuItem [] {
                     new MenuItem ("_Copy", "", null),
