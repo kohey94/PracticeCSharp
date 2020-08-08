@@ -21,6 +21,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleApp.Tui", "ConsoleAp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FunctionDemo", "FunctionDemo\FunctionDemo.csproj", "{C734C82E-1994-45E3-9623-AF711D719078}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RazorPagesDemo", "RazorPagesDemo\RazorPagesDemo.csproj", "{49AF7CFF-C9C7-49D6-9B03-77DFECE882D8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +65,10 @@ Global
 		{C734C82E-1994-45E3-9623-AF711D719078}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C734C82E-1994-45E3-9623-AF711D719078}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C734C82E-1994-45E3-9623-AF711D719078}.Release|Any CPU.Build.0 = Release|Any CPU
+		{49AF7CFF-C9C7-49D6-9B03-77DFECE882D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49AF7CFF-C9C7-49D6-9B03-77DFECE882D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49AF7CFF-C9C7-49D6-9B03-77DFECE882D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49AF7CFF-C9C7-49D6-9B03-77DFECE882D8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
