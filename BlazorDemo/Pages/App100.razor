@@ -1,0 +1,12 @@
+﻿@page "/app100"
+
+<h1>App100</h1>
+
+
+<label style="display:block;float:left;width:250px">@ランダム文字列</label>
+<button class="btn btn-primary" @onclick="文字列生成">生成</button>
+<br />
+<input type="text" @bind="@入力文字列" style="display:block;float:left;width:250px"/>
+<button class="btn btn-primary" @onclick="判定">判定</button>
+<br />
+<label>@正誤判定</label>

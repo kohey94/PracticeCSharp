@@ -19,9 +19,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UdpEasyChat.Client", "UdpEa
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleApp.Tui", "ConsoleApp.Tui\ConsoleApp.Tui.csproj", "{4FD24A80-AB30-4BDA-A816-742ADB65EC2F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FunctionDemo", "FunctionDemo\FunctionDemo.csproj", "{C734C82E-1994-45E3-9623-AF711D719078}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FunctionDemo", "FunctionDemo\FunctionDemo.csproj", "{C734C82E-1994-45E3-9623-AF711D719078}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RazorPagesDemo", "RazorPagesDemo\RazorPagesDemo.csproj", "{49AF7CFF-C9C7-49D6-9B03-77DFECE882D8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RazorPagesDemo", "RazorPagesDemo\RazorPagesDemo.csproj", "{49AF7CFF-C9C7-49D6-9B03-77DFECE882D8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorDemo", "BlazorDemo\BlazorDemo.csproj", "{49FE6727-46D6-43A3-8C04-F41416805654}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -69,6 +71,10 @@ Global
 		{49AF7CFF-C9C7-49D6-9B03-77DFECE882D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{49AF7CFF-C9C7-49D6-9B03-77DFECE882D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{49AF7CFF-C9C7-49D6-9B03-77DFECE882D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{49FE6727-46D6-43A3-8C04-F41416805654}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49FE6727-46D6-43A3-8C04-F41416805654}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49FE6727-46D6-43A3-8C04-F41416805654}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49FE6727-46D6-43A3-8C04-F41416805654}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
