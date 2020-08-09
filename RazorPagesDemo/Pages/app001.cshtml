@@ -2,9 +2,14 @@
 @model App001Model
 @{
     ViewData["Title"] = "App001";
+    ViewData["Value"] = "";
 }
 
 <h1>@ViewData["Title"]</h1>
 
 <p>demo page</p>
+
+<label>@ViewData["Value"]</label>
+<br />
+<input type="text" value="@ViewData["Value"]"/><button>button</button>
 
