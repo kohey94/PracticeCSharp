@@ -10,12 +10,12 @@ namespace FunctionDemo
     public static class FunctionDemo
     {
         [FunctionName("FunctionDemo")]
-        public static async Task Run([TimerTrigger("0 */1 * * * *")] TimerInfo myTimer, ILogger log)
+        public static async Task Run([TimerTrigger("%TimerScheduler%")] TimerInfo myTimer, ILogger log)
         {
             // 時間外起動はそのまま終了
             if (myTimer.IsPastDue) return;
 
-            var message = $"C# Timer trigger function executed at: {DateTime.Now}";
+            var message = $"Message: {GetEnvironmentVariable("EnvironmentVariableMessage")}";
             log.LogInformation(message);
 
             var parameters = new Dictionary<string, string>()
@@ -32,10 +32,11 @@ namespace FunctionDemo
 
         }
         /// <summary>
+        /// 環境変数値を取得する
         /// 参考:https://docs.microsoft.com/ja-jp/azure/azure-functions/functions-dotnet-class-library#environment-variables
         /// </summary>
-        /// <param name="name"></param>
-        /// <returns></returns>
+        /// <param name="name">環境変数名</param>
+        /// <returns>環境変数値</returns>
         public static string GetEnvironmentVariable(string name)
         {
             return Environment.GetEnvironmentVariable(name, EnvironmentVariableTarget.Process);
