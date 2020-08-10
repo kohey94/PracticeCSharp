@@ -15,7 +15,7 @@ namespace FunctionDemo
             // éûä‘äOãNìÆÇÕÇªÇÃÇ‹Ç‹èIóπ
             if (myTimer.IsPastDue) return;
 
-            var message = $"Message: {GetEnvironmentVariable("EnvironmentVariableMessage")}";
+            var message = $"Message: {Environment.GetEnvironmentVariable("EnvironmentVariableMessage")}";
             log.LogInformation(message);
 
             var parameters = new Dictionary<string, string>()
@@ -27,7 +27,7 @@ namespace FunctionDemo
 
             using var client = new HttpClient();
 
-            var response = await client.PostAsync(GetEnvironmentVariable("PostUrl"), content);
+            var response = await client.PostAsync(Environment.GetEnvironmentVariable("PostUrl"), content);
             log.LogInformation(response.StatusCode.ToString());
 
         }
