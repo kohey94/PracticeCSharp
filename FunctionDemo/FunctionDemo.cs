@@ -1,4 +1,4 @@
-using System;
+ï»¿using System;
 using System.Collections.Generic;
 using System.Net.Http;
 using System.Threading.Tasks;
@@ -12,7 +12,7 @@ namespace FunctionDemo
         [FunctionName("FunctionDemo")]
         public static async Task Run([TimerTrigger("%TimerScheduler%")] TimerInfo myTimer, ILogger log)
         {
-            // ŠÔŠO‹N“®‚Í‚»‚Ì‚Ü‚ÜI—¹
+            // æ™‚é–“å¤–èµ·å‹•ã¯ãã®ã¾ã¾çµ‚äº†
             if (myTimer.IsPastDue) return;
 
             var message = $"Message: {Environment.GetEnvironmentVariable("EnvironmentVariableMessage")}";
@@ -32,11 +32,11 @@ namespace FunctionDemo
 
         }
         /// <summary>
-        /// ŠÂ‹«•Ï”’l‚ğæ“¾‚·‚é
-        /// Ql:https://docs.microsoft.com/ja-jp/azure/azure-functions/functions-dotnet-class-library#environment-variables
+        /// ç’°å¢ƒå¤‰æ•°å€¤ã‚’å–å¾—ã™ã‚‹
+        /// å‚è€ƒ:https://docs.microsoft.com/ja-jp/azure/azure-functions/functions-dotnet-class-library#environment-variables
         /// </summary>
-        /// <param name="name">ŠÂ‹«•Ï”–¼</param>
-        /// <returns>ŠÂ‹«•Ï”’l</returns>
+        /// <param name="name">ç’°å¢ƒå¤‰æ•°å</param>
+        /// <returns>ç’°å¢ƒå¤‰æ•°å€¤</returns>
         public static string GetEnvironmentVariable(string name)
         {
             return Environment.GetEnvironmentVariable(name, EnvironmentVariableTarget.Process);
