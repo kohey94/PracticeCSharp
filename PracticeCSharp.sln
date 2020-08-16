@@ -23,7 +23,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FunctionDemo", "FunctionDem
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RazorPagesDemo", "RazorPagesDemo\RazorPagesDemo.csproj", "{49AF7CFF-C9C7-49D6-9B03-77DFECE882D8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorDemo", "BlazorDemo\BlazorDemo.csproj", "{49FE6727-46D6-43A3-8C04-F41416805654}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorDemo", "BlazorDemo\BlazorDemo.csproj", "{49FE6727-46D6-43A3-8C04-F41416805654}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SocketSample.Server", "SocketSample.Server\SocketSample.Server.csproj", "{9445950F-588D-4673-A8E5-CBD490D8F928}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SocketSample.Client", "SocketSample.Client\SocketSample.Client.csproj", "{21E2D4FE-A0EA-4725-BF65-197509FCE43B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -75,6 +79,14 @@ Global
 		{49FE6727-46D6-43A3-8C04-F41416805654}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{49FE6727-46D6-43A3-8C04-F41416805654}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{49FE6727-46D6-43A3-8C04-F41416805654}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9445950F-588D-4673-A8E5-CBD490D8F928}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9445950F-588D-4673-A8E5-CBD490D8F928}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9445950F-588D-4673-A8E5-CBD490D8F928}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9445950F-588D-4673-A8E5-CBD490D8F928}.Release|Any CPU.Build.0 = Release|Any CPU
+		{21E2D4FE-A0EA-4725-BF65-197509FCE43B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21E2D4FE-A0EA-4725-BF65-197509FCE43B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21E2D4FE-A0EA-4725-BF65-197509FCE43B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21E2D4FE-A0EA-4725-BF65-197509FCE43B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
