@@ -25,9 +25,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RazorPagesDemo", "RazorPage
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorDemo", "BlazorDemo\BlazorDemo.csproj", "{49FE6727-46D6-43A3-8C04-F41416805654}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SocketSample.Server", "SocketSample.Server\SocketSample.Server.csproj", "{9445950F-588D-4673-A8E5-CBD490D8F928}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SocketSample.Server", "SocketSample.Server\SocketSample.Server.csproj", "{9445950F-588D-4673-A8E5-CBD490D8F928}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SocketSample.Client", "SocketSample.Client\SocketSample.Client.csproj", "{21E2D4FE-A0EA-4725-BF65-197509FCE43B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SocketSample.Client", "SocketSample.Client\SocketSample.Client.csproj", "{21E2D4FE-A0EA-4725-BF65-197509FCE43B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetCore0001", "AspNetCore0001\AspNetCore0001.csproj", "{C3EB1897-D04A-47A6-83E6-49EF69EB539E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -87,6 +89,10 @@ Global
 		{21E2D4FE-A0EA-4725-BF65-197509FCE43B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{21E2D4FE-A0EA-4725-BF65-197509FCE43B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{21E2D4FE-A0EA-4725-BF65-197509FCE43B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3EB1897-D04A-47A6-83E6-49EF69EB539E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3EB1897-D04A-47A6-83E6-49EF69EB539E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3EB1897-D04A-47A6-83E6-49EF69EB539E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3EB1897-D04A-47A6-83E6-49EF69EB539E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
