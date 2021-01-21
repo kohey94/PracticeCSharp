@@ -24,5 +24,5 @@ HTTPリクエストパイプラインを構成する。
 必ず呼び出される。  
 環境変数によって複数のConfigureを使い分けることができる。  
 ConfigureDevelopment、ConfigureProductionなど。  
-IWebHostEnvironmentの拡張メソッドでも環境ごとの処理を分けることができる。
+IWebHostEnvironmentの拡張メソッドでも環境ごとの処理を分けることができる。  
 IWebHostEnvironment.IsDevelopment()、IWebHostEnvironment.IsProduction()など。  
