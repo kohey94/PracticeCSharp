@@ -2,39 +2,48 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using AspNetCore0003.Persistence.Abstractions;
+using AspNetCore0003.Persistence.Repository;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Newtonsoft.Json;
 
 namespace AspNetCore0003
 {
     public class Startup
     {
-        // This method gets called by the runtime. Use this method to add services to the container.
-        // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddSingleton<ICountryRepository>(new CountryRepository());
         }
 
-        // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, IServiceProvider provider)
         {
-            if (env.IsDevelopment())
+            app.Map("/country", countryApp =>
             {
-                app.UseDeveloperExceptionPage();
-            }
-
-            app.UseRouting();
-
-            app.UseEndpoints(endpoints =>
-            {
-                endpoints.MapGet("/", async context =>
+                countryApp.Run(async context =>
                 {
-                    await context.Response.WriteAsync("Hello World!");
+                    // Å´Ç±ÇÍÇæÇ∆ìÆÇ©Ç»Ç©Ç¡ÇΩ
+                    //var country = provider.GetService<ICountryRepository>();
+                    // Å´Ç±ÇÍÇ≈ìÆÇ¢ÇΩ éQçlURL:https://stackoverflow.com/questions/50619696/net-core-2-1-cannot-access-a-disposed-object-object-name-iserviceprovider
+                    var country = app.ApplicationServices.GetService<ICountryRepository>();
+                    var query = context.Request.Query["q"];
+                    var list = country.AllBy(query).ToList();
+                    var json = JsonConvert.SerializeObject(list);
+
+                    await context.Response.WriteAsync(json);
                 });
             });
+
+            // Work as a catch-all
+            app.Run(async context =>
+            {
+                await context.Response.WriteAsync("Invalid call");
+            });
+            
         }
     }
 }
