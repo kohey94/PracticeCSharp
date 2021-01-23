@@ -26,3 +26,8 @@ HTTPリクエストパイプラインを構成する。
 ConfigureDevelopment、ConfigureProductionなど。  
 IWebHostEnvironmentの拡張メソッドでも環境ごとの処理を分けることができる。  
 IWebHostEnvironment.IsDevelopment()、IWebHostEnvironment.IsProduction()など。  
+## DIシステムについて
+ASP.NET Coreには依存性注入システムがはじめから組み込まれている。  
+そのため、必要な依存関係をコンストラクタ（またはメンバ）で宣言するだけで、有効なインスタンスが作成できる。  
+
+
