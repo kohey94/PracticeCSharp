@@ -16,8 +16,9 @@ C#でTUIライブラリ[Terminal.Gui](https://github.com/migueldeicaza/gui.cs/)�
 ## FizzBuzz
 C#でFizzBuzzした。  
 
-## FunctionsDemo
-C#でAzure Functionsした。
+## FunctionDemo
+C#でAzure Functionsした。  
+[AuzreFunctionsPractice](https://github.com/kohey94/AuzreFunctionsPractice)っていうリポジトリがあるので、今後なにか書く場合はこっちに書きそう。  
 
 ## Practice001
 学生時代にJava学習用に作った問題をC#で解いてみたやつ。  
