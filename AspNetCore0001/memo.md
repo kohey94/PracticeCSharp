@@ -1,4 +1,4 @@
-﻿# メモ
+﻿# ASP.NET Coreメモ
 ## Program.cs
 ASP.NET Coreアプリケーションはdotnet.exeによって呼び出されるコンソールアプリケーションにすぎない。  
 Program.csがそのコンソールアプリケーションのソースコード。  
