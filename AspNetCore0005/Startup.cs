@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Routing.Constraints;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
@@ -21,6 +22,28 @@ namespace AspNetCore0005
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+            app.UseMvc(routes =>
+            {
+                routes.MapRoute(
+                    name: "route-date",
+                    template: "date/{offset}",
+                    defaults: new { controller = "date", action = "day", offset = 0 },
+                    constraints: new { offset = new IntRouteConstraint() } // offset‚ÉIntŒ^‚Ì§–ñ‚ğ•t‚¯‚é
+                    );
+            });
+
+            // ˆÈ‰º‚à“¯‚¶ˆ—
+            //app.UseMvc(routes =>
+            //{
+            //    routes.MapRoute(
+            //        name: "route-date",
+            //        template: "date/{offset:int}", // offset‚ÉIntŒ^‚Ì§–ñ‚ğ•t‚¯‚é
+            //        defaults: new { controller = "date", action = "day", offset = 0 }
+            //        );
+            //});
+
+
+
             app.UseMvc(routes =>
             {
                 routes.MapRoute(
