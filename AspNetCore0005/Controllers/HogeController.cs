@@ -22,5 +22,11 @@ namespace AspNetCore0005.Controllers
         {
             return new ContentResult { Content = $"HogePage {value}"  };
         }
+
+        [Route("/hg")]
+        public IActionResult HogePage2()
+        {
+            return new ContentResult { Content = $"HogePage hg" };
+        }
     }
 }
